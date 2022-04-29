@@ -1,0 +1,16 @@
+PONIŻSZY OUTPUT WYGENEROWANO POLECENIEM "clang-tidy.exe -checks='bugprone-*, clang-analyzer-*, readability-*, modernize-*' -p build/ main.cpp"
+
+D:\Nauka\Projects\PARO\PARO_2\main.cpp:1:10: warning: inclusion of deprecated C++ header 'stdio.h'; consider using 'cstdio' instead [modernize-deprecated-headers]
+#include <stdio.h>
+         ^~~~~~~~~
+         <cstdio>
+D:\Nauka\Projects\PARO\PARO_2\main.cpp:5:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+int main () 
+~~~ ^
+auto        -> int
+D:\Nauka\Projects\PARO\PARO_2\main.cpp:7:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+    int numbers[] = {1,2,3,4,5};
+    ^
+D:\Nauka\Projects\PARO\PARO_2\main.cpp:7:30: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+    int numbers[] = {1,2,3,4,5};
+                             ^
